@@ -259,7 +259,7 @@ func NormalizeToFQDNRules(name string, stripEmailDomain bool) (string, error) {
 		if stripEmailDomain {
 			name = name[:atIdx]
 		} else {
-			name = viper.GetString("oidc.default_user")
+			name = "example"
 		}
 	} else {
 		name = strings.ReplaceAll(name, "@", ".")
